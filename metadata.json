@@ -1,0 +1,6 @@
+{
+  "name": "Ember & Oak",
+  "description": "Ember & Oak is Kenya's premier luxury fine dining restaurant. Experience Michelin-caliber wood-fired culinary artistry, aged steaks, and artisanal wine pairings in Nairobi, Mombasa, Kisumu, and beyond.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

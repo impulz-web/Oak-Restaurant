@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), sans-serif;
+  --font-serif: var(--font-serif), serif;
+  
+  --color-cream: #FAF6F0;
+  --color-charcoal: #111111;
+  --color-charcoal-light: #1A1A1A;
+  --color-copper: #C5A880;
+  --color-copper-dark: #A4865E;
+  
+  --animate-fade-in: fade-in 0.8s ease-out forwards;
+  --animate-slide-up: slide-up 0.8s ease-out forwards;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF6F0;
+    color: #111111;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A4865E;
+}
+
